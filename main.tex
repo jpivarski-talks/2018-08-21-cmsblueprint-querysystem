@@ -140,6 +140,22 @@ $\sim$200 notebooks running at a time, served by 5 machines worldwide
 \end{uncoverenv}
 \end{frame}
 
+\begin{frame}{Query system for HEP}
+\vspace{0.5 cm}
+Our problem is structured more like Google BigQuery than Binder:
+\begin{itemize}
+\item no notebook state
+\item problems that must be distributed across large input datasets
+\item big outputs stay on the server as new inputs
+\item small outputs download to users
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.6\linewidth]{basic-block-diagram.pdf}
+\end{center}
+\end{frame}
+
+
 
 
 
