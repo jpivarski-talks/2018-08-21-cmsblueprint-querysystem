@@ -197,13 +197,13 @@ Our problem is structured more like Google BigQuery than Binder:
 
 \textcolor{darkorange}{\bf cachetools} for LRU? \textcolor{darkorange}{\bf diskcache} for spilling to disk?
 
-Object-store like \textcolor{darkorange}{\bf Ceph}? Database like \textcolor{darkorange}{\bf CouchBase}?
+Object-store like \textcolor{darkorange}{\bf Ceph}? Key-value database like \textcolor{darkorange}{\bf CouchBase}?
 \end{block}
 
 \begin{block}{\underline{Cache-local dispatch}}
 Build a non-standard queue in \textcolor{darkorange}{\bf Zookeeper}?
 
-Any other option to post a task pool and {\it pull} work to appropriate workers?
+Any other option to post a task pool and {\it pull} work to appropriate workers? \textcolor{gray}{(pilots?)}
 \end{block}
 
 \begin{block}{\underline{Worker implementation}}
@@ -213,14 +213,28 @@ Microframework like \textcolor{darkorange}{\bf Flask}? Specialized framework lik
 \end{block}
 \end{frame}
 
-\begin{frame}{I don't know what this will look like}
+\begin{frame}{I don't know what a final query service would look like}
 \large
+\vspace{0.25 cm}
+\textcolor{red}{I've been working on data formats and operations---} user interfaces to much faster data processing in Python. \textcolor{gray}{(Relevant both in and out of a query service.)}
+
 \vspace{0.5 cm}
-I've been working on data formats and operations--- the 
-
-
-  
+\begin{center}
+\uncover<2->{\includegraphics[width=0.9\linewidth]{logscales.pdf}}
+\end{center}
 \end{frame}
 
+\begin{frame}{But Igor has been developing a prototype query service}
+\Large
+\vspace{0.5 cm}
+\begin{itemize}
+\item CouchBase is the data storage
+\item plain HTTP transmission
+\item web-cache for worker's cache
+\item 
+\end{itemize}
+
+
+\end{frame}
 
 \end{document}
