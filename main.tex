@@ -186,8 +186,15 @@ Our problem is structured more like Google BigQuery than Binder:
 
 \begin{frame}{Ingredients}
 \begin{block}{\underline{Columnar data handling}}
-\textcolor{darkblue}{uproot} to read data by column; \textcolor{darkblue}{awkward-array} to manipulate jagged data structures as columns (Numpy-like interface)
+\textcolor{darkorange}{\bf uproot} to read data by column from ROOT files
+
+\textcolor{darkorange}{\bf awkward-array} to manipulate jagged data structures as columns \mbox{(Numpy-like interface)\hspace{-1 cm}}
+
+\textcolor{darkorange}{\bf blosc} for on-the-fly compression? \textcolor{darkorange}{\bf cachetools} for LRU? \textcolor{darkorange}{\bf diskcache} for spilling to disk?
 \end{block}
+
+
+
 
 
 \end{frame}
