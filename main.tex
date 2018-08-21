@@ -56,9 +56,92 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{First slide}
+\begin{frame}{Query-based analysis}
+\large
 \vspace{0.5 cm}
-HERE
+\textcolor{darkorange}{\bf Different performance characteristics $\to$ sociological consequences}
+
+\vspace{1 cm}
+\begin{columns}
+\column{0.3\linewidth}
+\underline{\Large Batch job}
+
+\vspace{0.2 cm}
+Long time to compute one complex function
+\column{0.3\linewidth}
+\underline{\Large Query}
+
+\vspace{0.2 cm}
+Short time to compute each simple function
+\end{columns}
+
+\vspace{1 cm}
+\begin{uncoverenv}<2->
+\begin{tikzpicture}[>=latex]
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(200:1 cm)}, text width=0.47\linewidth] {\large Exactly what we want for a well-defined procedure like reconstruction};
+\end{tikzpicture} \hfill \begin{tikzpicture}[>=latex]
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(-200:-1 cm)}, text width=0.45\linewidth] {\large Would greatly help exploratory data analysis, development in pieces};
+\end{tikzpicture}
+\end{uncoverenv}
 \end{frame}
+
+\begin{frame}{Different ``performance characteristics''}
+\large
+\vspace{0.5 cm}
+Not promising a miracle--- more computation in less time--- but scaling that fits many short jobs (``queries'') instead of few big jobs.
+
+\vspace{0.5 cm}
+\uncover<2->{\textcolor{darkblue}{\underline{What needs to change:}}}
+
+\vspace{0.2 cm}
+\begin{itemize}
+\item<3-> Startup time must be below a human timescale, like 100~ms. \textcolor{gray}{Workers must be ready and waiting, not launched.}
+\item<4-> Input data (which will always be large, like TB/query) must be cached on the workers. \textcolor{gray}{Work must be performed by the worker who already has the relevant fragment in cache.}
+\item<5-> Loading data from cache to the user function must not dominate over the user function. \textcolor{gray}{This is what I've been focusing on.}
+\item<6-> Output data must be small, like MB/query--- GB/query at most.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Query services in the wild}
+\hfill \includegraphics[height=1.5 cm]{google-bigquery-logo.png}
+
+\vspace{-1.25 cm}
+Google BigQuery is a public-facing SQL processor that runs my \\ 2~TB queries in 30~seconds.
+
+\vspace{0.5 cm}
+\hfill \uncover<2->{\includegraphics[height=1 cm]{binder-logo.pdf}}
+
+\vspace{-1.1 cm}
+\uncover<2->{Binder is a free service that runs any Jupyter Notebook you have \\ on a GitHub repository.}
+
+\vspace{0.25 cm}
+\begin{uncoverenv}<3->
+\textcolor{gray}{\small
+Search on GitHub: {\tt\scriptsize binder in:path path:/binder} yields \textcolor{black}{9,754} Binder setup files. \\
+Search on GitHub: {\tt\scriptsize https://mybinder.org/badge.svg language:Markdown} yields \textcolor{black}{3,835} badges.}
+\end{uncoverenv}
+
+\begin{uncoverenv}<4->
+\begin{columns}
+\column{0.35\linewidth}
+\small
+$\sim$10 notebook launches/minute \\
+\ ??? cell evaluations/minute
+
+\vspace{0.2 cm}
+served by 5 VMs worldwide
+
+\vspace{0.2 cm}
+\scriptsize Tim Head: ``The trick is to \mbox{oversubscribe\hspace{-0.5 cm}} the CPU massively, turns out humans take a long time to read what a notebook computed for them.''
+
+\column{0.6\linewidth}
+\includegraphics[height=3 cm]{binder-launches.png}\mbox{ }\includegraphics[height=3 cm]{binder-utilization.png}
+\end{columns}
+\end{uncoverenv}
+\end{frame}
+
+
+
+
 
 \end{document}
