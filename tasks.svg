@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="307.72198mm"
+   height="137.39536mm"
+   viewBox="0 0 307.72198 137.39536"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="tasks.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient121">
+      <stop
+         style="stop-color:#ff78ff;stop-opacity:1"
+         offset="0"
+         id="stop117" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop119" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5438">
+      <stop
+         style="stop-color:#f6ff59;stop-opacity:1"
+         offset="0"
+         id="stop5434" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop5436" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5432">
+      <stop
+         style="stop-color:#ababff;stop-opacity:1"
+         offset="0"
+         id="stop5428" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop5430" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5402"
+       inkscape:collect="always">
+      <stop
+         id="stop5398"
+         offset="0"
+         style="stop-color:#ff9c59;stop-opacity:1" />
+      <stop
+         id="stop5400"
+         offset="1"
+         style="stop-color:#ffe4d1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4648">
+      <stop
+         style="stop-color:#ff9c59;stop-opacity:1"
+         offset="0"
+         id="stop4644" />
+      <stop
+         style="stop-color:#ffe4d1;stop-opacity:1"
+         offset="1"
+         id="stop4646" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4648"
+       id="linearGradient4650"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5402"
+       id="linearGradient5360"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="translate(-1.7393176)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5438"
+       id="linearGradient5414"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="translate(-149.90599)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5432"
+       id="linearGradient5418"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="translate(-112.86432)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5402"
+       id="linearGradient5422"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="translate(-75.822654)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5402"
+       id="linearGradient5426"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="translate(-38.780986)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5438"
+       id="linearGradient5414-4"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311"
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,-798.28594,-350.0911)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5438"
+       id="linearGradient5474"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-186.94768)"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5438"
+       id="linearGradient5478"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-223.98937)"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311" />
+    <linearGradient
+       gradientTransform="matrix(3.7795276,0,0,3.7795276,-798.28595,-350.0911)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient5402"
+       id="linearGradient5360-3"
+       gradientUnits="userSpaceOnUse"
+       x1="216.76935"
+       y1="131.44643"
+       x2="237.936"
+       y2="85.711311" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient121"
+       id="linearGradient115"
+       gradientUnits="userSpaceOnUse"
+       x1="206.34584"
+       y1="231.13795"
+       x2="241.94505"
+       y2="142.907"
+       gradientTransform="translate(-1.6036282,-10.156242)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient121"
+       id="linearGradient1002"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-107.43699,-10.156242)"
+       x1="206.34584"
+       y1="231.13795"
+       x2="241.94505"
+       y2="142.907" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient121"
+       id="linearGradient1274"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-107.43695,-10.156242)"
+       x1="206.34584"
+       y1="231.13795"
+       x2="241.94505"
+       y2="142.907" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient121"
+       id="linearGradient1278"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-213.27032,-10.156242)"
+       x1="206.34584"
+       y1="231.13795"
+       x2="241.94505"
+       y2="142.907" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="444.12539"
+     inkscape:cy="337.2486"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-others="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-nodes="true"
+     inkscape:window-width="1914"
+     inkscape:window-height="987"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(37.860672,-87.628269)">
+    <rect
+       style="opacity:1;vector-effect:none;fill:url(#linearGradient1278);fill-opacity:1;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1276"
+       width="85.526245"
+       height="81.249947"
+       x="-32.596172"
+       y="138.50917" />
+    <rect
+       y="138.50917"
+       x="73.237198"
+       height="81.249947"
+       width="85.526245"
+       id="rect1272"
+       style="opacity:1;vector-effect:none;fill:url(#linearGradient1274);fill-opacity:1;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient4650);fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="137.01636"
+       y="94.971733"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="137.01636"
+         y="104.3355"
+         style="fill:url(#linearGradient4650);fill-opacity:1;stroke-width:0.26458332" /></text>
+    <rect
+       style="fill:url(#linearGradient5478);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="92.892853"
+       x="-12.511591"
+       height="34.01786"
+       width="34.773804"
+       id="rect5476" />
+    <rect
+       id="rect5472"
+       width="34.773804"
+       height="34.01786"
+       x="24.530077"
+       y="92.892853"
+       style="fill:url(#linearGradient5474);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect118"
+       width="34.773804"
+       height="34.01786"
+       x="209.73842"
+       y="92.892853"
+       style="fill:url(#linearGradient5360);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="fill:url(#linearGradient5426);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="92.892853"
+       x="172.69675"
+       height="34.01786"
+       width="34.773804"
+       id="use4632" />
+    <rect
+       style="fill:url(#linearGradient5422);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="92.892853"
+       x="135.65508"
+       height="34.01786"
+       width="34.773804"
+       id="use4634" />
+    <rect
+       style="fill:url(#linearGradient5418);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="92.892853"
+       x="98.613411"
+       height="34.01786"
+       width="34.773804"
+       id="use4636" />
+    <rect
+       style="fill:url(#linearGradient5414);fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="92.892853"
+       x="61.571747"
+       height="34.01786"
+       width="34.773804"
+       id="use4638" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="211.25026"
+       y="97.995537"
+       id="text16"><tspan
+         sodipodi:role="line"
+         x="211.25026"
+         y="97.995537"
+         style="stroke-width:0.26458332"
+         id="tspan18">query A</tspan><tspan
+         sodipodi:role="line"
+         x="211.25026"
+         y="103.2872"
+         style="stroke-width:0.26458332"
+         id="tspan26">task A1 requires:</tspan><tspan
+         sodipodi:role="line"
+         x="211.25026"
+         y="108.57887"
+         style="stroke-width:0.26458332"
+         id="tspan22">DiMu-1-mupt</tspan><tspan
+         sodipodi:role="line"
+         x="211.25026"
+         y="113.87054"
+         style="stroke-width:0.26458332"
+         id="tspan24">DiMu-1-mueta</tspan></text>
+    <text
+       id="text36"
+       y="97.995537"
+       x="174.20856"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan28"
+         style="stroke-width:0.26458332"
+         y="97.995537"
+         x="174.20856"
+         sodipodi:role="line">query A</tspan><tspan
+         id="tspan30"
+         style="stroke-width:0.26458332"
+         y="103.2872"
+         x="174.20856"
+         sodipodi:role="line">task A2 requires:</tspan><tspan
+         id="tspan32"
+         style="stroke-width:0.26458332"
+         y="108.57887"
+         x="174.20856"
+         sodipodi:role="line">DiMu-2-mupt</tspan><tspan
+         id="tspan34"
+         style="stroke-width:0.26458332"
+         y="113.87054"
+         x="174.20856"
+         sodipodi:role="line">DiMu-2-mueta</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="137.1669"
+       y="97.995537"
+       id="text46"><tspan
+         sodipodi:role="line"
+         x="137.1669"
+         y="97.995537"
+         style="stroke-width:0.26458332"
+         id="tspan38">query A</tspan><tspan
+         sodipodi:role="line"
+         x="137.1669"
+         y="103.2872"
+         style="stroke-width:0.26458332"
+         id="tspan40">task A3 requires:</tspan><tspan
+         sodipodi:role="line"
+         x="137.1669"
+         y="108.57887"
+         style="stroke-width:0.26458332"
+         id="tspan42">DiMu-3-mupt</tspan><tspan
+         sodipodi:role="line"
+         x="137.1669"
+         y="113.87054"
+         style="stroke-width:0.26458332"
+         id="tspan44">DiMu-3-mueta</tspan></text>
+    <text
+       id="text56"
+       y="97.995537"
+       x="63.083549"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan48"
+         style="stroke-width:0.26458332"
+         y="97.995537"
+         x="63.083549"
+         sodipodi:role="line">query C</tspan><tspan
+         id="tspan50"
+         style="stroke-width:0.26458332"
+         y="103.2872"
+         x="63.083549"
+         sodipodi:role="line">task C1 requires:</tspan><tspan
+         id="tspan52"
+         style="stroke-width:0.26458332"
+         y="108.57887"
+         x="63.083549"
+         sodipodi:role="line">DiMu-1-jetpt</tspan><tspan
+         id="tspan54"
+         style="stroke-width:0.26458332"
+         y="113.87054"
+         x="63.083549"
+         sodipodi:role="line">DiMu-1-jetphi</tspan><tspan
+         style="stroke-width:0.26458332"
+         y="119.1622"
+         x="63.083549"
+         sodipodi:role="line"
+         id="tspan78">DiMu-1-mupt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="26.041878"
+       y="97.995537"
+       id="text90"><tspan
+         sodipodi:role="line"
+         x="26.041878"
+         y="97.995537"
+         style="stroke-width:0.26458332"
+         id="tspan80">query C</tspan><tspan
+         sodipodi:role="line"
+         x="26.041878"
+         y="103.2872"
+         style="stroke-width:0.26458332"
+         id="tspan82">task C2 requires:</tspan><tspan
+         sodipodi:role="line"
+         x="26.041878"
+         y="108.57887"
+         style="stroke-width:0.26458332"
+         id="tspan84">DiMu-2-jetpt</tspan><tspan
+         sodipodi:role="line"
+         x="26.041878"
+         y="113.87054"
+         style="stroke-width:0.26458332"
+         id="tspan86">DiMu-2-jetphi</tspan><tspan
+         id="tspan88"
+         sodipodi:role="line"
+         x="26.041878"
+         y="119.1622"
+         style="stroke-width:0.26458332">DiMu-2-mupt</tspan></text>
+    <text
+       id="text102"
+       y="97.995537"
+       x="-10.999788"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan92"
+         style="stroke-width:0.26458332"
+         y="97.995537"
+         x="-10.999788"
+         sodipodi:role="line">query C</tspan><tspan
+         id="tspan94"
+         style="stroke-width:0.26458332"
+         y="103.2872"
+         x="-10.999788"
+         sodipodi:role="line">task C3 requires:</tspan><tspan
+         id="tspan96"
+         style="stroke-width:0.26458332"
+         y="108.57887"
+         x="-10.999788"
+         sodipodi:role="line">DiMu-3-jetpt</tspan><tspan
+         id="tspan98"
+         style="stroke-width:0.26458332"
+         y="113.87054"
+         x="-10.999788"
+         sodipodi:role="line">DiMu-3-jetphi</tspan><tspan
+         style="stroke-width:0.26458332"
+         y="119.1622"
+         x="-10.999788"
+         sodipodi:role="line"
+         id="tspan100">DiMu-3-mupt</tspan></text>
+    <text
+       id="text112"
+       y="97.995537"
+       x="100.12524"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan104"
+         style="stroke-width:0.26458332"
+         y="97.995537"
+         x="100.12524"
+         sodipodi:role="line">query B</tspan><tspan
+         id="tspan106"
+         style="stroke-width:0.26458332"
+         y="103.2872"
+         x="100.12524"
+         sodipodi:role="line">task B1 requires:</tspan><tspan
+         id="tspan108"
+         style="stroke-width:0.26458332"
+         y="108.57887"
+         x="100.12524"
+         sodipodi:role="line">Exo-1-mupt</tspan><tspan
+         id="tspan110"
+         style="stroke-width:0.26458332"
+         y="113.87054"
+         x="100.12524"
+         sodipodi:role="line">Exo-1-mueta</tspan><tspan
+         style="stroke-width:0.26458332"
+         y="119.1622"
+         x="100.12524"
+         sodipodi:role="line"
+         id="tspan114">Exo-1-muphi</tspan><tspan
+         style="stroke-width:0.26458332"
+         y="124.45387"
+         x="100.12524"
+         sodipodi:role="line"
+         id="tspan116">Exo-1-MET</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:url(#linearGradient115);fill-opacity:1;stroke:#000000;stroke-width:0.52899998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect103"
+       width="85.526245"
+       height="81.249947"
+       x="179.07056"
+       y="138.50917" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.41147423px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.46321714"
+       x="189.90182"
+       y="149.61293"
+       id="text3794"><tspan
+         sodipodi:role="line"
+         id="tspan3792"
+         x="189.90182"
+         y="149.61293"
+         style="stroke-width:0.46321714">Worker 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="184.63588"
+       y="157.66916"
+       id="text3798"><tspan
+         sodipodi:role="line"
+         id="tspan3796"
+         x="184.63588"
+         y="157.66916"
+         style="stroke-width:0.26458332">1. Has nothing in cache.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="162.96083"
+         style="stroke-width:0.26458332"
+         id="tspan3800">2. Picks task A1 because it's first.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="168.25249"
+         style="stroke-width:0.26458332"
+         id="tspan3802">3. Fetches DiMu-1-mupt, DiMu-1-mueta.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="173.54416"
+         style="stroke-width:0.26458332"
+         id="tspan3804">4. Performs task A1.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="178.83583"
+         style="stroke-width:0.26458332"
+         id="tspan3806">5. Picks task C1 because it's first with</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="184.12749"
+         style="stroke-width:0.26458332"
+         id="tspan3808">    DiMu-1 requirements.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="189.41916"
+         style="stroke-width:0.26458332"
+         id="tspan3810">6. Fetches DiMu-1-jetpt, DiMu-1-jetphi.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="194.71083"
+         style="stroke-width:0.26458332"
+         id="tspan3812">7. Performs task C1.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="200.00249"
+         style="stroke-width:0.26458332"
+         id="tspan3814">8. Picks task B1 because it's first.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="205.29416"
+         style="stroke-width:0.26458332"
+         id="tspan3816">9. Fetches Exo-1-* requirements.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="210.58582"
+         style="stroke-width:0.26458332"
+         id="tspan1266">10. Performs task B1.</tspan><tspan
+         sodipodi:role="line"
+         x="184.63588"
+         y="215.87749"
+         style="stroke-width:0.26458332"
+         id="tspan1268">11. No tasks in pool.</tspan></text>
+    <text
+       id="text976"
+       y="149.61293"
+       x="84.068466"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.41147423px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.46321714"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.46321714"
+         y="149.61293"
+         x="84.068466"
+         id="tspan974"
+         sodipodi:role="line">Worker 2</tspan></text>
+    <text
+       id="text998"
+       y="157.66916"
+       x="78.802521"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="157.66916"
+         x="78.802521"
+         id="tspan978"
+         sodipodi:role="line">1. Has nothing in cache.</tspan><tspan
+         id="tspan980"
+         style="stroke-width:0.26458332"
+         y="162.96083"
+         x="78.802521"
+         sodipodi:role="line">2. Picks task A2 because it's first.</tspan><tspan
+         id="tspan982"
+         style="stroke-width:0.26458332"
+         y="168.25249"
+         x="78.802521"
+         sodipodi:role="line">3. Fetches DiMu-2-mupt, DiMu-2-mueta.</tspan><tspan
+         id="tspan984"
+         style="stroke-width:0.26458332"
+         y="173.54416"
+         x="78.802521"
+         sodipodi:role="line">4. Performs task A2.</tspan><tspan
+         id="tspan986"
+         style="stroke-width:0.26458332"
+         y="178.83583"
+         x="78.802521"
+         sodipodi:role="line">5. Picks task C2 because it's first with</tspan><tspan
+         id="tspan988"
+         style="stroke-width:0.26458332"
+         y="184.12749"
+         x="78.802521"
+         sodipodi:role="line">    DiMu-2 requirements.</tspan><tspan
+         id="tspan990"
+         style="stroke-width:0.26458332"
+         y="189.41916"
+         x="78.802521"
+         sodipodi:role="line">6. Fetches DiMu-2-jetpt, DiMu-2-jetphi.</tspan><tspan
+         id="tspan992"
+         style="stroke-width:0.26458332"
+         y="194.71083"
+         x="78.802521"
+         sodipodi:role="line">7. Performs task C2.</tspan><tspan
+         id="tspan996"
+         style="stroke-width:0.26458332"
+         y="200.00249"
+         x="78.802521"
+         sodipodi:role="line">8. No tasks in pool.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.41147423px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.46321714"
+       x="-21.764904"
+       y="149.61293"
+       id="text1008"><tspan
+         sodipodi:role="line"
+         id="tspan1006"
+         x="-21.764904"
+         y="149.61293"
+         style="stroke-width:0.46321714">Worker 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-27.030849"
+       y="157.66916"
+       id="text1030"><tspan
+         sodipodi:role="line"
+         id="tspan1010"
+         x="-27.030849"
+         y="157.66916"
+         style="stroke-width:0.26458332">1. Has nothing in cache.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="162.96083"
+         style="stroke-width:0.26458332"
+         id="tspan1012">2. Picks task A3 because it's first.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="168.25249"
+         style="stroke-width:0.26458332"
+         id="tspan1014">3. Fetches DiMu-3-mupt, DiMu-3-mueta.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="173.54416"
+         style="stroke-width:0.26458332"
+         id="tspan1016">4. Performs task A3.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="178.83583"
+         style="stroke-width:0.26458332"
+         id="tspan1018">5. Picks task C3 because it's first with</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="184.12749"
+         style="stroke-width:0.26458332"
+         id="tspan1020">    DiMu-3 requirements.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="189.41916"
+         style="stroke-width:0.26458332"
+         id="tspan1022">6. Fetches DiMu-3-jetpt, DiMu-3-jetphi.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="194.71083"
+         style="stroke-width:0.26458332"
+         id="tspan1024">7. Performs task C3.</tspan><tspan
+         sodipodi:role="line"
+         x="-27.030849"
+         y="200.00249"
+         style="stroke-width:0.26458332"
+         id="tspan1028">8. No tasks in pool.</tspan></text>
+  </g>
+</svg>
