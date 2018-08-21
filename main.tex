@@ -141,22 +141,56 @@ $\sim$200 notebooks running at a time, served by 5 machines worldwide
 \end{frame}
 
 \begin{frame}{Query system for HEP}
-\vspace{0.5 cm}
+\vspace{0.35 cm}
 Our problem is structured more like Google BigQuery than Binder:
+
+\vspace{0.15 cm}
 \begin{itemize}
-\item no notebook state
-\item problems that must be distributed across large input datasets
-\item big outputs stay on the server as new inputs
+\item no notebook state; each query is a pure function
+\item large source datasets, embarrassingly parallel, distributed across workers
+\item big outputs stay on the server as new sources
 \item small outputs download to users
 \end{itemize}
 
+\vspace{0.15 cm}
 \begin{center}
 \includegraphics[width=0.6\linewidth]{basic-block-diagram.pdf}
 \end{center}
 \end{frame}
 
+\begin{frame}{More considerations}
+\vspace{0.25 cm}
+\hfill \mbox{\includegraphics[height=3 cm]{basic-block-diagram.pdf} \hspace{-0.75 cm}}
+
+\vspace{-3 cm}
+\begin{itemize}\setlength{\itemsep}{0.5 cm}
+\item<1-> Sources are {\it shared} across users, some more \\ popular (likely in cache) than others.
+
+\vspace{0.1 cm}
+\begin{itemize}
+\item \underline{955 CMS NanoAOD branches}
+\item \textcolor{white}{0}70 are 4-vector components
+\item 127 are ``id'' variables
+\item 153 are isolation variables
+\item 601 are HLT booleans (may be bitmaps)
+\end{itemize}
+
+\vspace{0.1 cm}
+\hspace{-0.5 cm}Columns (branches) should be the granular unit of reading and caching on workers.
+
+\item<2-> Some variable transformations, like jet energy corrections, could be useful to many users as new sources. Data should be sharable with columnar granularity (e.g.\ use centrally produced isolation with user-corrected energy).
+
+\item<3-> Reduced outputs (histograms and tuples for maximum likelihood fitting) are unlikely to be useful to multiple users--- less important to cache.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ingredients}
+\begin{block}{\underline{Columnar data handling}}
+\textcolor{darkblue}{uproot} to read data by column; \textcolor{darkblue}{awkward-array} to manipulate jagged data structures as columns (Numpy-like interface)
+\end{block}
 
 
+\end{frame}
 
 
 
