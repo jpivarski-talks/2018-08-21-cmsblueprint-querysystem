@@ -78,9 +78,9 @@ Short time to compute each simple function
 \vspace{1 cm}
 \begin{uncoverenv}<2->
 \begin{tikzpicture}[>=latex]
-\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(200:1 cm)}, text width=0.47\linewidth] {\large Exactly what we want for a well-defined procedure like reconstruction};
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(200:1 cm)}, text width=0.47\linewidth] {\large Optimize execution of well-defined procedures, like central reconstruction};
 \end{tikzpicture} \hfill \begin{tikzpicture}[>=latex]
-\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(-200:-1 cm)}, text width=0.45\linewidth] {\large Would greatly help exploratory data analysis, development in pieces};
+\node[rectangle callout, draw, inner sep=5 pt, callout relative pointer={(-200:-1 cm)}, text width=0.45\linewidth] {\large Make and correct mistakes, discover blind alleys early, find surprises};
 \end{tikzpicture}
 \end{uncoverenv}
 \end{frame}
@@ -95,9 +95,9 @@ Not promising a miracle--- more computation in less time--- but scaling that fit
 
 \vspace{0.2 cm}
 \begin{itemize}
-\item<3-> Startup time must be below a human timescale, like 100~ms. \textcolor{gray}{Workers must be ready and waiting, not launched.}
-\item<4-> Input data (which will always be large, like TB/query) must be cached on the workers. \textcolor{gray}{Work must be performed by the worker who already has the relevant fragment in cache.}
-\item<5-> Loading data from cache to the user function must not dominate over the user function. \textcolor{gray}{This is what I've been focusing on.}
+\item<3-> Startup time must be below a human timescale, like 100~ms. \textcolor{gray}{Workers must be ready and waiting, not launched on demand.}
+\item<4-> Input data (which will always be large, like TB/query) must be cached on the workers. \textcolor{gray}{And work should be performed by the worker who already has the relevant fragment in cache! Dispatch by cache-locality.}
+\item<5-> Moving and transforming data from cache to the user function must not dominate over the user function. \textcolor{gray}{(This is what I've been focusing on.)}
 \item<6-> Output data must be small, like MB/query--- GB/query at most.
 \end{itemize}
 \end{frame}
@@ -112,7 +112,7 @@ Google BigQuery is a public-facing SQL processor that runs my \\ 2~TB queries in
 \hfill \uncover<2->{\includegraphics[height=1 cm]{binder-logo.pdf}}
 
 \vspace{-1.1 cm}
-\uncover<2->{Binder is a free service that runs any Jupyter Notebook you have \\ on a GitHub repository.}
+\uncover<2->{Binder is a free service that runs any Jupyter Notebook in a \\ GitHub repository. \textcolor{gray}{(Not quite ``query'' due to notebook state.)}}
 
 \vspace{0.25 cm}
 \begin{uncoverenv}<3->
@@ -128,7 +128,7 @@ Search on GitHub: {\tt\scriptsize https://mybinder.org/badge.svg language:Markdo
 $\sim$200 notebooks running at a time, served by 5 machines worldwide
 
 \vspace{0.25 cm}
-\scriptsize Tim Head: ``The trick is to oversubscribe the CPU massively, turns out humans take a long time to read what a notebook computed for them.''
+\scriptsize Tim Head: ``The trick is to oversubscribe the CPU massively; turns out humans take a long time to read what a notebook computed for them.''
 
 \normalsize
 \vspace{0.25 cm}
@@ -180,23 +180,37 @@ Our problem is structured more like Google BigQuery than Binder:
 
 \item<2-> Some variable transformations, like jet energy corrections, could be useful to many users as new sources. Data should be sharable with columnar granularity (e.g.\ use centrally produced isolation with user-corrected energy).
 
-\item<3-> Reduced outputs (histograms and tuples for maximum likelihood fitting) are unlikely to be useful to multiple users--- less important to cache.
+\item<3-> Reduced outputs (histograms and tuples for maximum likelihood fitting) are specialized--- unlikely to be useful to multiple users--- less worth caching.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Ingredients}
+\vspace{0.25 cm}
 \begin{block}{\underline{Columnar data handling}}
 \textcolor{darkorange}{\bf uproot} to read data by column from ROOT files
 
 \textcolor{darkorange}{\bf awkward-array} to manipulate jagged data structures as columns \mbox{(Numpy-like interface)\hspace{-1 cm}}
-
-\textcolor{darkorange}{\bf blosc} for on-the-fly compression? \textcolor{darkorange}{\bf cachetools} for LRU? \textcolor{darkorange}{\bf diskcache} for spilling to disk?
 \end{block}
 
+\begin{block}{\underline{Data delivery}}
+\textcolor{darkorange}{\bf blosc} for on-the-fly compression?
 
+\textcolor{darkorange}{\bf cachetools} for LRU? \textcolor{darkorange}{\bf diskcache} for spilling to disk?
 
+Object-store like \textcolor{darkorange}{\bf Ceph}? Database like \textcolor{darkorange}{\bf CouchBase}?
+\end{block}
 
+\begin{block}{\underline{Cache-local dispatch}}
+Build a non-standard queue in \textcolor{darkorange}{\bf Zookeeper}?
 
+Any other option to post a task pool and {\it pull} work to appropriate workers?
+\end{block}
+
+\begin{block}{\underline{Worker implementation}}
+Simple HTTP modules?
+
+Microframework like \textcolor{darkorange}{\bf Flask}? Specialized framework like \textcolor{darkorange}{\bf Dask} or \textcolor{darkorange}{\bf Spark}? \textcolor{gray}{(push only)}
+\end{block}
 \end{frame}
 
 
