@@ -56,6 +56,21 @@
 
 % START START START START START START START START START START START START START
 
+\begin{frame}{Purpose of this talk}
+\Large
+\vspace{0.5 cm}
+Although I've talked a lot about how query systems could work in HEP, I haven't actually been developing prototypes.
+
+\vspace{0.5 cm}
+\uncover<2->{I've been developing a fast, high-level computing model that could be used by such a system.}
+
+\vspace{0.5 cm}
+\uncover<3->{Igor has developed a working system, and he'll show us a demo.}
+
+\vspace{0.5 cm}
+\uncover<4->{First, though, I want to set the context and put forward a few ideas that we should be considering.}
+\end{frame}
+
 \begin{frame}{Query-based analysis}
 \large
 \vspace{0.5 cm}
@@ -97,7 +112,7 @@ Not promising a miracle--- more computation in less time--- but scaling that fit
 \begin{itemize}
 \item<3-> Startup time must be below a human timescale, like 100~ms. \textcolor{gray}{Workers must be ready and waiting, not launched on demand.}
 \item<4-> Input data (which will always be large, like TB/query) must be cached on the workers. \textcolor{gray}{And work should be performed by the worker who already has the relevant fragment in cache! Dispatch by cache-locality.}
-\item<5-> Moving and transforming data from cache to the user function must not dominate over the user function. \textcolor{gray}{(This is what I've been focusing on.)}
+\item<5-> Moving and transforming data from cache to the user function must not dominate over the user function. \textcolor{gray}{(This is what I've been working on.)}
 \item<6-> Output data must be small, like MB/query--- GB/query at most.
 \end{itemize}
 \end{frame}
@@ -180,7 +195,7 @@ Our problem is structured more like Google BigQuery than Binder:
 
 \item<2-> Some variable transformations, like jet energy corrections, could be useful to many users as new sources. Data should be sharable with columnar granularity (e.g.\ use centrally produced isolation with user-corrected energy).
 
-\item<3-> Reduced outputs (histograms and tuples for maximum likelihood fitting) are specialized--- unlikely to be useful to multiple users--- less worth caching.
+\item<3-> Reduced outputs (histograms and tuples for maximum likelihood fitting) are specialized--- unlikely to be useful to multiple users--- less worth caching, if at all.
 \end{itemize}
 \end{frame}
 
@@ -213,18 +228,20 @@ Microframework like \textcolor{darkorange}{\bf Flask}? Specialized framework lik
 \end{block}
 \end{frame}
 
-\begin{frame}{I don't know what a final query service would look like}
+\begin{frame}{User code should be high-level and operate on columns}
 \large
 \vspace{0.25 cm}
-\textcolor{red}{I've been working on data formats and operations---} user interfaces to much faster data processing in Python. \textcolor{gray}{(Relevant both in and out of a query service.)}
+There was a lot of room for improvement here, so that's why it's my focus.
+
+\mbox{ } \hfill \textcolor{gray}{(Examples in backup slides.)} \hfill \mbox{ }
 
 \vspace{0.5 cm}
 \begin{center}
-\uncover<2->{\includegraphics[width=0.9\linewidth]{logscales.pdf}}
+\includegraphics[width=0.9\linewidth]{logscales.pdf}
 \end{center}
 \end{frame}
 
-\begin{frame}{But Igor has been developing a prototype query service}
+\begin{frame}{Igor has developed a query service that is ready for analysis}
 \Large
 \vspace{0.5 cm}
 \begin{itemize}
