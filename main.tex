@@ -247,8 +247,61 @@ Microframework like \textcolor{darkorange}{\bf Flask}? Specialized framework lik
 \end{center}
 \end{frame}
 
-\begin{frame}{}
-\vspace{0.75 cm}
+\begin{frame}[fragile]{Examples of jagged operations}
+\scriptsize
+\begin{columns}
+\column{1.1\linewidth}
+\begin{minted}{python}
+>>> events
+<Table [<Event 0> <Event 1> ... <Event 99998> <Event 99999>]>
+\end{minted}
+\begin{uncoverenv}<2->
+\begin{minted}{python}
+>>> events["Jet"]
+<JaggedArray [[<Jet 0> <Jet 1> <Jet 2>] [<Jet 3>] ... [] [<Jet 7346528> <Jet 7346529>]]>
+>>> events["Muon"]
+<JaggedArray [[<Muon 0>] [<Muon 1> <Muon 2>] ... [<Muon 127068>] [<Muon 127069>]]>
+\end{minted}
+\end{uncoverenv}
+\begin{uncoverenv}<3->
+\begin{minted}{python}
+>>> hasjet = (events["Jet"].counts > 0)
+>>> hasmuon = (events["Muon"].counts > 0)
+\end{minted}
+\end{uncoverenv}
+\begin{uncoverenv}<4->
+\begin{minted}{python}
+>>> goodevents = events[hasjet & hasmuon]
+>>> goodevents
+<Table [<Event 0> <Event 1> ... <Event 48689> <Event 48691>]>
+\end{minted}
+\end{uncoverenv}
+\begin{uncoverenv}<5->
+\begin{minted}{python}
+>>> goodevents["Jet"][:, 0]
+<Table [<Jet 0> <Jet 3> ... <Jet 7346525> <Jet 7346528>]>
+\end{minted}
+\end{uncoverenv}
+\begin{uncoverenv}<6->
+\begin{minted}{python}
+>>> goodevents["Jet"][:, 0]["p4"]
+<ObjectArray [TLorentzVector(200.3, 12.8, 506.8, 545.2) TLorentzVector(-255.7, -74.6, -187.2, 326.2) ...
+              TLorentzVector(209.3, 6.8, -1917.5, 1929.0) TLorentzVector(11.8, 41.5, -51.3, 67.9)]
+\end{minted}
+\end{uncoverenv}
+\begin{uncoverenv}<7->
+\begin{minted}{python}
+>>> pairs = goodevents["Jet"]["p4"].cross(goodevents["Muon"]["p4"])
+>>> (pairs["0"] + pairs["1"]).mass()
+<JaggedArray [[460.79373692 465.34311958 569.06474572] [673.3946112 428.59751399] ...
+              [379.91269403 694.82493557]]>
+\end{minted}
+\end{uncoverenv}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Cache-local task pool idea}
+\vspace{0.25 cm}
 \only<1>{\includegraphics[width=\linewidth]{tasks-89.pdf}}
 \only<2>{\includegraphics[width=\linewidth]{tasks-90.pdf}}
 \only<3>{\includegraphics[width=\linewidth]{tasks-91.pdf}}
